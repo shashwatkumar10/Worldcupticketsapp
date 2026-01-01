@@ -1,0 +1,548 @@
+[
+    {
+        "id": "usa",
+        "name": "United States",
+        "countryCode": "US",
+        "confederation": "CONCACAF",
+        "fifaRanking": 15,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "usa-world-cup-2026-tickets",
+        "qualificationStatus": "Host",
+        "previousWorldCups": 10
+    },
+    {
+        "id": "mexico",
+        "name": "Mexico",
+        "countryCode": "MX",
+        "confederation": "CONCACAF",
+        "fifaRanking": 14,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "mexico-world-cup-2026-tickets",
+        "qualificationStatus": "Host",
+        "previousWorldCups": 17
+    },
+    {
+        "id": "canada",
+        "name": "Canada",
+        "countryCode": "CA",
+        "confederation": "CONCACAF",
+        "fifaRanking": 40,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "canada-world-cup-2026-tickets",
+        "qualificationStatus": "Host",
+        "previousWorldCups": 2
+    },
+    {
+        "id": "argentina",
+        "name": "Argentina",
+        "countryCode": "AR",
+        "confederation": "CONMEBOL",
+        "fifaRanking": 1,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "argentina-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 18
+    },
+    {
+        "id": "brazil",
+        "name": "Brazil",
+        "countryCode": "BR",
+        "confederation": "CONMEBOL",
+        "fifaRanking": 5,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "brazil-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 22
+    },
+    {
+        "id": "colombia",
+        "name": "Colombia",
+        "countryCode": "CO",
+        "confederation": "CONMEBOL",
+        "fifaRanking": 12,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "colombia-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 6
+    },
+    {
+        "id": "ecuador",
+        "name": "Ecuador",
+        "countryCode": "EC",
+        "confederation": "CONMEBOL",
+        "fifaRanking": 28,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "ecuador-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 4
+    },
+    {
+        "id": "uruguay",
+        "name": "Uruguay",
+        "countryCode": "UY",
+        "confederation": "CONMEBOL",
+        "fifaRanking": 11,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "uruguay-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 14
+    },
+    {
+        "id": "paraguay",
+        "name": "Paraguay",
+        "countryCode": "PY",
+        "confederation": "CONMEBOL",
+        "fifaRanking": 48,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "paraguay-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 8
+    },
+    {
+        "id": "england",
+        "name": "England",
+        "countryCode": "GB-ENG",
+        "confederation": "UEFA",
+        "fifaRanking": 4,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "england-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 16
+    },
+    {
+        "id": "france",
+        "name": "France",
+        "countryCode": "FR",
+        "confederation": "UEFA",
+        "fifaRanking": 3,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "france-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 16
+    },
+    {
+        "id": "germany",
+        "name": "Germany",
+        "countryCode": "DE",
+        "confederation": "UEFA",
+        "fifaRanking": 9,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "germany-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 20
+    },
+    {
+        "id": "spain",
+        "name": "Spain",
+        "countryCode": "ES",
+        "confederation": "UEFA",
+        "fifaRanking": 2,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "spain-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 16
+    },
+    {
+        "id": "netherlands",
+        "name": "Netherlands",
+        "countryCode": "NL",
+        "confederation": "UEFA",
+        "fifaRanking": 7,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "netherlands-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 11
+    },
+    {
+        "id": "portugal",
+        "name": "Portugal",
+        "countryCode": "PT",
+        "confederation": "UEFA",
+        "fifaRanking": 6,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "portugal-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 8
+    },
+    {
+        "id": "belgium",
+        "name": "Belgium",
+        "countryCode": "BE",
+        "confederation": "UEFA",
+        "fifaRanking": 8,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "belgium-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 14
+    },
+    {
+        "id": "croatia",
+        "name": "Croatia",
+        "countryCode": "HR",
+        "confederation": "UEFA",
+        "fifaRanking": 10,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "croatia-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 6
+    },
+    {
+        "id": "switzerland",
+        "name": "Switzerland",
+        "countryCode": "CH",
+        "confederation": "UEFA",
+        "fifaRanking": 16,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "switzerland-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 12
+    },
+    {
+        "id": "austria",
+        "name": "Austria",
+        "countryCode": "AT",
+        "confederation": "UEFA",
+        "fifaRanking": 22,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "austria-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 7
+    },
+    {
+        "id": "scotland",
+        "name": "Scotland",
+        "countryCode": "GB-SCT",
+        "confederation": "UEFA",
+        "fifaRanking": 35,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "scotland-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 8
+    },
+    {
+        "id": "norway",
+        "name": "Norway",
+        "countryCode": "NO",
+        "confederation": "UEFA",
+        "fifaRanking": 45,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "norway-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 3
+    },
+    {
+        "id": "japan",
+        "name": "Japan",
+        "countryCode": "JP",
+        "confederation": "AFC",
+        "fifaRanking": 17,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "japan-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 7
+    },
+    {
+        "id": "korea-republic",
+        "name": "Korea Republic",
+        "countryCode": "KR",
+        "confederation": "AFC",
+        "fifaRanking": 24,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "south-korea-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 11
+    },
+    {
+        "id": "saudi-arabia",
+        "name": "Saudi Arabia",
+        "countryCode": "SA",
+        "confederation": "AFC",
+        "fifaRanking": 56,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "saudi-arabia-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 6
+    },
+    {
+        "id": "iran",
+        "name": "IR Iran",
+        "countryCode": "IR",
+        "confederation": "AFC",
+        "fifaRanking": 23,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "iran-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 6
+    },
+    {
+        "id": "australia",
+        "name": "Australia",
+        "countryCode": "AU",
+        "confederation": "AFC",
+        "fifaRanking": 26,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "australia-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 6
+    },
+    {
+        "id": "qatar",
+        "name": "Qatar",
+        "countryCode": "QA",
+        "confederation": "AFC",
+        "fifaRanking": 37,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "qatar-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 2
+    },
+    {
+        "id": "uzbekistan",
+        "name": "Uzbekistan",
+        "countryCode": "UZ",
+        "confederation": "AFC",
+        "fifaRanking": 62,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "uzbekistan-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 0
+    },
+    {
+        "id": "jordan",
+        "name": "Jordan",
+        "countryCode": "JO",
+        "confederation": "AFC",
+        "fifaRanking": 70,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "jordan-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 0
+    },
+    {
+        "id": "morocco",
+        "name": "Morocco",
+        "countryCode": "MA",
+        "confederation": "CAF",
+        "fifaRanking": 13,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "morocco-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 6
+    },
+    {
+        "id": "senegal",
+        "name": "Senegal",
+        "countryCode": "SN",
+        "confederation": "CAF",
+        "fifaRanking": 19,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "senegal-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 3
+    },
+    {
+        "id": "egypt",
+        "name": "Egypt",
+        "countryCode": "EG",
+        "confederation": "CAF",
+        "fifaRanking": 33,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "egypt-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 3
+    },
+    {
+        "id": "cote-divoire",
+        "name": "Côte d'Ivoire",
+        "countryCode": "CI",
+        "confederation": "CAF",
+        "fifaRanking": 39,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "ivory-coast-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 3
+    },
+    {
+        "id": "tunisia",
+        "name": "Tunisia",
+        "countryCode": "TN",
+        "confederation": "CAF",
+        "fifaRanking": 36,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "tunisia-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 6
+    },
+    {
+        "id": "algeria",
+        "name": "Algeria",
+        "countryCode": "DZ",
+        "confederation": "CAF",
+        "fifaRanking": 31,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "algeria-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 4
+    },
+    {
+        "id": "south-africa",
+        "name": "South Africa",
+        "countryCode": "ZA",
+        "confederation": "CAF",
+        "fifaRanking": 59,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "south-africa-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 3
+    },
+    {
+        "id": "ghana",
+        "name": "Ghana",
+        "countryCode": "GH",
+        "confederation": "CAF",
+        "fifaRanking": 66,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "ghana-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 4
+    },
+    {
+        "id": "cabo-verde",
+        "name": "Cabo Verde",
+        "countryCode": "CV",
+        "confederation": "CAF",
+        "fifaRanking": 55,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "cabo-verde-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 0
+    },
+    {
+        "id": "panama",
+        "name": "Panama",
+        "countryCode": "PA",
+        "confederation": "CONCACAF",
+        "fifaRanking": 44,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "panama-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 2
+    },
+    {
+        "id": "curacao",
+        "name": "Curaçao",
+        "countryCode": "CW",
+        "confederation": "CONCACAF",
+        "fifaRanking": 85,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "curacao-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 0
+    },
+    {
+        "id": "haiti",
+        "name": "Haiti",
+        "countryCode": "HT",
+        "confederation": "CONCACAF",
+        "fifaRanking": 89,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "haiti-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 1
+    },
+    {
+        "id": "new-zealand",
+        "name": "New Zealand",
+        "countryCode": "NZ",
+        "confederation": "OFC",
+        "fifaRanking": 93,
+        "competitionIds": [
+            "fifa-world-cup-2026"
+        ],
+        "slug": "new-zealand-world-cup-2026-tickets",
+        "qualificationStatus": "Qualified",
+        "previousWorldCups": 2
+    }
+]

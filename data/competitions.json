@@ -1,0 +1,160 @@
+[
+    {
+        "id": "fifa-world-cup-2026",
+        "name": "FIFA World Cup 2026",
+        "slug": "fifa-world-cup-2026-tickets",
+        "sport": "football",
+        "year": 2026,
+        "startDate": "2026-06-11",
+        "endDate": "2026-07-19",
+        "hostCountries": [
+            "USA",
+            "Canada",
+            "Mexico"
+        ],
+        "format": "48 teams, 104 matches",
+        "description": "The 2026 FIFA World Cup will be the 23rd FIFA World Cup, jointly hosted by the United States, Mexico, and Canada. This will be the first World Cup to feature 48 teams, with 104 matches played across 16 venues in 3 countries.",
+        "metaTitle": "FIFA World Cup 2026 Tickets - Buy Official Tickets | WorldCupTickets.app",
+        "metaDescription": "Buy FIFA World Cup 2026 tickets from verified resellers. Compare prices from StubHub, Viagogo & more. 48 teams, 104 matches across USA, Canada & Mexico.",
+        "h1Title": "FIFA World Cup 2026 Tickets - Buy Official Tickets",
+        "featuredImage": "/images/competitions/fifa-world-cup-2026.jpg",
+        "status": "upcoming"
+    },
+    {
+        "id": "summer-olympics-2028",
+        "name": "Summer Olympics 2028",
+        "slug": "summer-olympics-2028-tickets",
+        "sport": "multi-sport",
+        "year": 2028,
+        "startDate": "2028-07-14",
+        "endDate": "2028-07-30",
+        "hostCountries": [
+            "USA"
+        ],
+        "format": "28+ Olympic sports",
+        "description": "The 2028 Summer Olympics, officially the Games of the XXXIV Olympiad, will be held in Los Angeles, California, United States. This marks the third time that Los Angeles will host the Summer Olympics.",
+        "metaTitle": "Summer Olympics 2028 Los Angeles Tickets - Buy Official Tickets",
+        "metaDescription": "Buy 2028 Los Angeles Summer Olympics tickets. All sports, all venues. Compare prices from verified ticket resellers.",
+        "h1Title": "Summer Olympics 2028 Los Angeles Tickets - Buy Official Tickets",
+        "featuredImage": "/images/competitions/summer-olympics-2028.jpg",
+        "status": "upcoming"
+    },
+    {
+        "id": "winter-olympics-2026",
+        "name": "Winter Olympics 2026",
+        "slug": "winter-olympics-2026-tickets",
+        "sport": "multi-sport",
+        "year": 2026,
+        "startDate": "2026-02-06",
+        "endDate": "2026-02-22",
+        "hostCountries": [
+            "Italy"
+        ],
+        "format": "15 winter sports",
+        "description": "The 2026 Winter Olympics will be held in Milan and Cortina d'Ampezzo, Italy. The Games will feature 15 winter sports across venues in Milan, Cortina d'Ampezzo, Bormio, and Livigno.",
+        "metaTitle": "Winter Olympics 2026 Milan-Cortina Tickets - Buy Official Tickets",
+        "metaDescription": "Buy 2026 Milan-Cortina Winter Olympics tickets. Alpine skiing, ice hockey, figure skating & more. Compare prices from verified resellers.",
+        "h1Title": "Winter Olympics 2026 Milan-Cortina Tickets - Buy Official Tickets",
+        "featuredImage": "/images/competitions/winter-olympics-2026.jpg",
+        "status": "upcoming"
+    },
+    {
+        "id": "rugby-world-cup-2027",
+        "name": "Rugby World Cup 2027",
+        "slug": "rugby-world-cup-2027-tickets",
+        "sport": "rugby",
+        "year": 2027,
+        "startDate": "2027-10-01",
+        "endDate": "2027-11-13",
+        "hostCountries": [
+            "Australia"
+        ],
+        "format": "24 teams",
+        "description": "The 2027 Rugby World Cup will be the eleventh Rugby World Cup, hosted by Australia. The tournament will feature 24 teams competing across 7 host cities.",
+        "metaTitle": "Rugby World Cup 2027 Australia Tickets - Buy Official Tickets",
+        "metaDescription": "Buy Rugby World Cup 2027 tickets. All matches across Australia. Compare prices from StubHub, Viagogo & more verified resellers.",
+        "h1Title": "Rugby World Cup 2027 Australia Tickets - Buy Official Tickets",
+        "featuredImage": "/images/competitions/rugby-world-cup-2027.jpg",
+        "status": "upcoming"
+    },
+    {
+        "id": "icc-cricket-world-cup-2027",
+        "name": "ICC Cricket World Cup 2027",
+        "slug": "icc-cricket-world-cup-2027-tickets",
+        "sport": "cricket",
+        "year": 2027,
+        "startDate": "2027-10-01",
+        "endDate": "2027-11-26",
+        "hostCountries": [
+            "South Africa",
+            "Zimbabwe",
+            "Namibia"
+        ],
+        "format": "14 teams, 54 matches",
+        "description": "The 2027 ICC Cricket World Cup will be the 15th edition of the Cricket World Cup, hosted by South Africa, Zimbabwe, and Namibia.",
+        "metaTitle": "ICC Cricket World Cup 2027 Tickets - Buy Official Tickets",
+        "metaDescription": "Buy ICC Cricket World Cup 2027 tickets. India, Australia, England & more. Compare prices across South Africa, Zimbabwe & Namibia venues.",
+        "h1Title": "ICC Cricket World Cup 2027 Tickets - Buy Official Tickets",
+        "featuredImage": "/images/competitions/icc-cricket-world-cup-2027.jpg",
+        "status": "upcoming"
+    },
+    {
+        "id": "euro-2028",
+        "name": "UEFA Euro 2028",
+        "slug": "euro-2028-tickets",
+        "sport": "football",
+        "year": 2028,
+        "startDate": "2028-06-09",
+        "endDate": "2028-07-09",
+        "hostCountries": [
+            "United Kingdom",
+            "Ireland"
+        ],
+        "format": "24 teams",
+        "description": "UEFA Euro 2028 will be the 18th UEFA European Championship, hosted across the United Kingdom and Ireland. Matches will be played in London, Manchester, Liverpool, Birmingham, Newcastle, Glasgow, Dublin, Cardiff, Belfast, and Cork.",
+        "metaTitle": "UEFA Euro 2028 Tickets - Buy Official Tickets",
+        "metaDescription": "Buy UEFA Euro 2028 tickets. All matches across UK & Ireland. Compare prices from StubHub, Viagogo & verified resellers.",
+        "h1Title": "UEFA Euro 2028 UK & Ireland Tickets - Buy Official Tickets",
+        "featuredImage": "/images/competitions/euro-2028.jpg",
+        "status": "upcoming"
+    },
+    {
+        "id": "icc-t20-world-cup-2026",
+        "name": "ICC T20 World Cup 2026",
+        "slug": "icc-t20-world-cup-2026-tickets",
+        "sport": "cricket",
+        "year": 2026,
+        "startDate": "2026-02-15",
+        "endDate": "2026-03-22",
+        "hostCountries": [
+            "India",
+            "Sri Lanka"
+        ],
+        "format": "20 teams",
+        "description": "The 2026 ICC Men's T20 World Cup will be co-hosted by India and Sri Lanka, featuring 20 teams in the premier T20 international tournament.",
+        "metaTitle": "ICC T20 World Cup 2026 Tickets - Buy Official Tickets",
+        "metaDescription": "Buy ICC T20 World Cup 2026 tickets. Action-packed T20 cricket across India & Sri Lanka. Compare ticket prices now.",
+        "h1Title": "ICC T20 World Cup 2026 Tickets - Buy Official Tickets",
+        "featuredImage": "/images/competitions/icc-t20-world-cup-2026.jpg",
+        "status": "upcoming"
+    },
+    {
+        "id": "copa-america-2028",
+        "name": "Copa America 2028",
+        "slug": "copa-america-2028-tickets",
+        "sport": "football",
+        "year": 2028,
+        "startDate": "2028-06-11",
+        "endDate": "2028-07-10",
+        "hostCountries": [
+            "Ecuador"
+        ],
+        "format": "16 teams",
+        "description": "Copa America 2028 will be hosted by Ecuador, featuring the best national teams from South America and invited guests.",
+        "metaTitle": "Copa America 2028 Ecuador Tickets - Buy Official Tickets",
+        "metaDescription": "Buy Copa America 2028 tickets. Argentina, Brazil & South American giants. Compare prices from verified ticket resellers.",
+        "h1Title": "Copa America 2028 Ecuador Tickets - Buy Official Tickets",
+        "featuredImage": "/images/competitions/copa-america-2028.jpg",
+        "status": "upcoming"
+    }
+]
