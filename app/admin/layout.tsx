@@ -1,7 +1,41 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
 import { ReactNode } from 'react';
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
+    const router = useRouter();
+    const pathname = usePathname();
+    const [authorized, setAuthorized] = useState(false);
+
+    useEffect(() => {
+        // Skip check on login page
+        if (pathname === '/admin/login') {
+            setAuthorized(true);
+            return;
+        }
+
+        // Simple client-side check for the cookie set by login page
+        const hasSession = document.cookie.includes('admin_session=authenticated');
+
+        if (!hasSession) {
+            router.push('/admin/login');
+        } else {
+            setAuthorized(true);
+        }
+    }, [pathname, router]);
+
+    if (!authorized && pathname !== '/admin/login') {
+        return <div className="min-h-screen bg-[#0f0f23] flex items-center justify-center text-white">Checking access...</div>;
+    }
+
+    // If on login page, render full screen without sidebar
+    if (pathname === '/admin/login') {
+        return <>{children}</>;
+    }
+
     return (
         <div className="min-h-screen bg-[#0f0f23] flex">
             {/* Sidebar */}
