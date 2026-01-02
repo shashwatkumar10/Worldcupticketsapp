@@ -11,16 +11,13 @@ export default function LoginPage() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        // For simplicity, we'll use a hardcoded check in a client component for now 
-        // or better, a server action. Given the constraints, let's do a simple 
-        // fetch to an auth API route.
-        const res = await fetch('/api/admin/auth', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ password }),
-        });
+        // Client-side check for static export compatibility.
+        // TODO: Migrate to Firebase Auth for better security.
+        const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'admin123';
 
-        if (res.ok) {
+        if (password === ADMIN_PASSWORD) {
+            // Set cookie manually for client-side middleware/checks
+            document.cookie = "admin_session=authenticated; path=/; max-age=86400; SameSite=Lax";
             router.push('/admin');
             router.refresh();
         } else {

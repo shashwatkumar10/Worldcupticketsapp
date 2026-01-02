@@ -1,23 +1,37 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useRouter, useParams } from 'next/navigation';
+import { useState, useEffect, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { db } from '@/lib/firebase';
 
-export default function EditTeamPage() {
+function EditTeamContent() {
     const router = useRouter();
-    const { id } = useParams();
+    const searchParams = useSearchParams();
+    const id = searchParams.get('id');
     const [team, setTeam] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (id && id !== 'new') {
-            fetch('/api/admin/teams')
-                .then(res => res.json())
-                .then(data => {
-                    const found = data.find((t: any) => t.id === id);
-                    setTeam(found);
+            const fetchTeam = async () => {
+                try {
+                    const docRef = doc(db, 'teams', id);
+                    const docSnap = await getDoc(docRef);
+
+                    if (docSnap.exists()) {
+                        setTeam(docSnap.data());
+                    } else {
+                        console.error("Team not found");
+                        router.push('/admin/teams');
+                    }
+                } catch (error) {
+                    console.error("Error fetching team:", error);
+                } finally {
                     setLoading(false);
-                });
+                }
+            };
+            fetchTeam();
         } else {
             setTeam({
                 id: '',
@@ -36,15 +50,13 @@ export default function EditTeamPage() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        const res = await fetch('/api/admin/teams', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(team),
-        });
-
-        if (res.ok) {
+        try {
+            await setDoc(doc(db, 'teams', team.id), team);
             router.push('/admin/teams');
             router.refresh();
+        } catch (error) {
+            console.error("Error saving team:", error);
+            alert("Failed to save team.");
         }
     };
 
@@ -136,5 +148,13 @@ export default function EditTeamPage() {
                 </div>
             </form>
         </div>
+    );
+}
+
+export default function EditTeamPage() {
+    return (
+        <Suspense fallback={<div className="text-white p-8">Loading editor...</div>}>
+            <EditTeamContent />
+        </Suspense>
     );
 }

@@ -35,7 +35,7 @@ export default function AdminMatchesPage() {
                     <h1 className="text-2xl font-bold text-white">Manage Matches</h1>
                     <p className="text-gray-400">Total {fixtures.length} fixtures scheduled</p>
                 </div>
-                <Link href="/admin/matches/new" className="btn-primary px-6 py-2">
+                <Link href="/admin/matches/editor?id=new" className="btn-primary px-6 py-2">
                     Add New Match
                 </Link>
             </div>
@@ -66,7 +66,7 @@ export default function AdminMatchesPage() {
                                     {match.matchDate} {match.matchTime}
                                 </td>
                                 <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                    <Link href={`/admin/matches/edit/${match.id}`} className="text-purple-400 hover:text-purple-300 mr-4">
+                                    <Link href={`/admin/matches/editor?id=${match.id}`} className="text-purple-400 hover:text-purple-300 mr-4">
                                         Edit
                                     </Link>
                                     <button

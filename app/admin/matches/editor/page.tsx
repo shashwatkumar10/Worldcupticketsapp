@@ -1,14 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useRouter, useParams } from 'next/navigation';
-
+import { useState, useEffect, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 
-export default function EditMatchPage() {
+function EditMatchContent() {
     const router = useRouter();
-    const { id } = useParams();
+    const searchParams = useSearchParams();
+    const id = searchParams.get('id');
     const [match, setMatch] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
@@ -333,5 +333,13 @@ function ToolbarButton({ icon, title, onClick }: { icon: string, title: string, 
                 icon === 'I' ? <em>I</em> :
                     icon === 'U' ? <span className="underline decoration-2">U</span> : icon}
         </button>
+    );
+}
+
+export default function EditMatchPage() {
+    return (
+        <Suspense fallback={<div className="text-white p-8">Loading editor...</div>}>
+            <EditMatchContent />
+        </Suspense>
     );
 }
