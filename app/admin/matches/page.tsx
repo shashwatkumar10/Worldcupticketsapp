@@ -1,7 +1,33 @@
-import fixtures from '@/data/fixtures.json';
+'use client';
+
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { collection, onSnapshot, deleteDoc, doc } from 'firebase/firestore';
+import { db } from '@/lib/firebase';
 
 export default function AdminMatchesPage() {
+    const [fixtures, setFixtures] = useState<any[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const unsubscribe = onSnapshot(collection(db, 'fixtures'), (snapshot) => {
+            const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            // Sort by date/time if needed, or leave natural order
+            setFixtures(data);
+            setLoading(false);
+        });
+
+        return () => unsubscribe();
+    }, []);
+
+    const handleDelete = async (id: string) => {
+        if (confirm('Are you sure you want to delete this match?')) {
+            await deleteDoc(doc(db, 'fixtures', id));
+        }
+    };
+
+    if (loading) return <div className="p-8 text-white">Loading matches...</div>;
+
     return (
         <div className="space-y-6">
             <div className="flex items-center justify-between">
@@ -43,7 +69,10 @@ export default function AdminMatchesPage() {
                                     <Link href={`/admin/matches/edit/${match.id}`} className="text-purple-400 hover:text-purple-300 mr-4">
                                         Edit
                                     </Link>
-                                    <button className="text-red-400 hover:text-red-300">
+                                    <button
+                                        onClick={() => handleDelete(match.id)}
+                                        className="text-red-400 hover:text-red-300"
+                                    >
                                         Delete
                                     </button>
                                 </td>
@@ -51,6 +80,11 @@ export default function AdminMatchesPage() {
                         ))}
                     </tbody>
                 </table>
+                {fixtures.length === 0 && (
+                    <div className="p-8 text-center text-gray-500">
+                        No matches found. Add your first match!
+                    </div>
+                )}
                 {fixtures.length > 50 && (
                     <div className="p-4 text-center text-gray-500 text-sm italic">
                         Showing first 50 matches. Use search to find specific fixtures.

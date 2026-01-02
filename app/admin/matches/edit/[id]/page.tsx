@@ -3,6 +3,9 @@
 import { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 
+import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { db } from '@/lib/firebase';
+
 export default function EditMatchPage() {
     const router = useRouter();
     const { id } = useParams();
@@ -11,13 +14,26 @@ export default function EditMatchPage() {
 
     useEffect(() => {
         if (id && id !== 'new') {
-            fetch('/api/admin/matches')
-                .then(res => res.json())
-                .then(data => {
-                    const found = data.find((f: any) => f.id === id);
-                    setMatch(found);
+            const fetchMatch = async () => {
+                try {
+                    // Start of refactor: fetch single doc from Firestore
+                    const docRef = doc(db, 'fixtures', id as string);
+                    const docSnap = await getDoc(docRef);
+
+                    if (docSnap.exists()) {
+                        setMatch(docSnap.data());
+                    } else {
+                        // Handle not found or just redirect
+                        console.error("Match not found");
+                        router.push('/admin/matches');
+                    }
+                } catch (error) {
+                    console.error("Error fetching match:", error);
+                } finally {
                     setLoading(false);
-                });
+                }
+            };
+            fetchMatch();
         } else {
             setMatch({
                 id: '',
@@ -46,15 +62,16 @@ export default function EditMatchPage() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        const res = await fetch('/api/admin/matches', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(match),
-        });
+        try {
+            // Refactor: Write to Firestore
+            // match.id is the document ID
+            await setDoc(doc(db, 'fixtures', match.id), match);
 
-        if (res.ok) {
             router.push('/admin/matches');
-            router.refresh();
+            router.refresh(); // Refresh Client Router cache
+        } catch (error) {
+            console.error("Error saving match:", error);
+            alert("Failed to save match.");
         }
     };
 
