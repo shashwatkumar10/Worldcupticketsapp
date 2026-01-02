@@ -9,29 +9,29 @@
   --primary: #8b5cf6;
   --primary-dark: #7c3aed;
   --primary-light: #a78bfa;
-  
+
   /* Accent Colors */
   --accent-gold: #fbbf24;
   --accent-red: #ef4444;
   --accent-green: #22c55e;
   --accent-blue: #3b82f6;
-  
+
   /* Background Colors */
   --background: #0f0f23;
   --background-secondary: #1a1a2e;
   --background-card: #16213e;
   --background-glass: rgba(255, 255, 255, 0.05);
-  
+
   /* Text Colors */
   --foreground: #ffffff;
   --foreground-muted: #a1a1aa;
   --foreground-dim: #71717a;
-  
+
   /* Border & Shadow */
   --border: rgba(255, 255, 255, 0.1);
   --border-glow: rgba(139, 92, 246, 0.5);
   --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.3);
-  
+
   /* Gradients */
   --gradient-hero: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
   --gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
@@ -66,7 +66,12 @@ body {
    Typography
    ======================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -364,7 +369,7 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
     radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.15) 0%, transparent 40%);
   pointer-events: none;
@@ -418,19 +423,41 @@ h3 {
    ======================================== */
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.5); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.5);
+  }
 }
 
 @keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animate-float {
@@ -449,15 +476,15 @@ h3 {
   h1 {
     font-size: 2rem;
   }
-  
+
   h2 {
     font-size: 1.5rem;
   }
-  
+
   .countdown-value {
     font-size: 1.75rem;
   }
-  
+
   .countdown-item {
     min-width: 60px;
     padding: 0.75rem 1rem;
@@ -486,6 +513,61 @@ h3 {
 }
 
 /* ========================================
+   WYSIWYG Editor Fixes
+   ======================================== */
+
+#article-editor ul {
+  list-style-type: disc !important;
+  padding-left: 2rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 2em !important;
+}
+
+#article-editor ol {
+  list-style-type: decimal !important;
+  padding-left: 2rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 2em !important;
+}
+
+#article-editor li {
+  display: list-item !important;
+  margin-bottom: 0.75rem !important;
+}
+
+#article-editor h1 {
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 1.5rem !important;
+  margin-top: 1rem !important;
+  width: 100%;
+  display: block;
+}
+
+#article-editor h2 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem !important;
+  margin-top: 2rem !important;
+  width: 100%;
+  display: block;
+}
+
+#article-editor h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 2rem !important;
+  width: 100%;
+  display: block;
+}
+
+#article-editor p {
+  margin-bottom: 1.75rem !important;
+  line-height: 1.8;
+}
+
+/* ========================================
    Affiliate Disclosure Banner
    ======================================== */
 
@@ -496,4 +578,47 @@ h3 {
   padding: 0.75rem 1rem;
   font-size: 0.75rem;
   color: var(--foreground-muted);
+}
+
+/* ========================================
+   Public Article Typography Overrides
+   ======================================== */
+
+.prose h2 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white !important;
+  font-size: 1.8rem !important;
+}
+
+.prose h3 {
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
+  color: var(--primary-light) !important;
+  font-size: 1.4rem !important;
+}
+
+.prose p {
+  margin-bottom: 1.5rem !important;
+  line-height: 1.85 !important;
+  font-size: 1.1rem !important;
+  color: #d4d4d8 !important;
+  /* Slightly lighter gray */
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 2rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.prose li {
+  margin-bottom: 0.75rem !important;
+}
+
+.prose strong {
+  color: var(--accent-gold) !important;
+  font-weight: 700;
 }

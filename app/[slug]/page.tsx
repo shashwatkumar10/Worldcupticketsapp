@@ -511,10 +511,16 @@ function FixturePage({ fixture }: { fixture: Fixture }) {
             <section className="py-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <article className="prose prose-invert prose-lg max-w-none">
-                        {fixture.slug.includes('usa-vs-mexico') && <USAMexicoArticle />}
-                        {fixture.slug.includes('brazil-vs-argentina') && <BrazilArgentinaArticle />}
-                        {!fixture.slug.includes('usa-vs-mexico') && !fixture.slug.includes('brazil-vs-argentina') && (
-                            <GenericFixtureArticle fixture={fixture} />
+                        {fixture.articleContent ? (
+                            <div dangerouslySetInnerHTML={{ __html: fixture.articleContent }} />
+                        ) : (
+                            <>
+                                {fixture.slug.includes('usa-vs-mexico') && <USAMexicoArticle />}
+                                {fixture.slug.includes('brazil-vs-argentina') && <BrazilArgentinaArticle />}
+                                {!fixture.slug.includes('usa-vs-mexico') && !fixture.slug.includes('brazil-vs-argentina') && (
+                                    <GenericFixtureArticle fixture={fixture} />
+                                )}
+                            </>
                         )}
                     </article>
                 </div>

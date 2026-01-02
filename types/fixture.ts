@@ -34,4 +34,5 @@ export interface Fixture {
     h1Title: string;
     status: 'scheduled' | 'live' | 'completed';
     affiliateLinks: AffiliateLink[];
+    articleContent?: string;
 }
