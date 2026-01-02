@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WorldCupTickets.app - Buy FIFA World Cup, Olympics & Sports Championship Tickets",
+  title: "WorldCupTickets.app - Buy FIFA World Cup, Olympics & Sports Championship Tickets and More",
   description: "The ultimate destination for sports fans seeking tickets to FIFA World Cup 2026, Olympics 2028, Rugby World Cup, Cricket World Cup and more. Compare prices from StubHub, Viagogo & verified resellers.",
   keywords: "World Cup tickets, FIFA World Cup 2026, Olympics 2028 tickets, Rugby World Cup tickets, sports tickets, buy tickets",
   openGraph: {
